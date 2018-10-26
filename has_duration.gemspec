@@ -17,8 +17,8 @@ It does it by providing a serializer and validator for ActiveSupport::Duration o
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 3.2"
+  s.add_dependency "rails", "~> 5.1"
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "sqlite3", '~> 1.3.10'
   s.add_development_dependency "rspec"
 end
