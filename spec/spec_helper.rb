@@ -3,8 +3,7 @@ require_relative '../lib/has_duration'
 require 'rspec/autorun'
 require 'logger'
 
-ActiveRecord::Base.configurations = {'sqlite3' => {:adapter => 'sqlite3', :database => ':memory:'}}
-ActiveRecord::Base.establish_connection('sqlite3')
+ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 
 ActiveRecord::Base.logger = Logger.new(STDERR)
 ActiveRecord::Base.logger.level = Logger::WARN

@@ -48,7 +48,7 @@ module HasDuration
     #       # ruby > durations.doctor.from_now
     #       # => 2012-09-16 13:12:22 -0300 
     def has_duration(field_name)
-      serialize field_name, DurationSerializer
+      serialize field_name, coder: DurationSerializer
       validates field_name, duration: true
 
       define_method("#{field_name}_unit") do

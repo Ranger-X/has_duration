@@ -12,6 +12,13 @@ describe Visit do
       end
     end
   end
+
+  it 'preserves the serialized database value' do
+    visit = Visit.create!(doctor: 1.year)
+    stored_value = Visit.connection.select_value("SELECT doctor FROM visits WHERE id = #{visit.id}")
+
+    expect(stored_value).to eq('1.year')
+  end
   
   it 'Skips validation for nil values' do
     Visit.new(doctor: 1.year, club: nil).should be_valid

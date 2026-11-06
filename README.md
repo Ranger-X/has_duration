@@ -30,3 +30,7 @@ This plugin extends ActiveRecord so you can conveniently store durations like: h
     puts "If contacted today, next contact would be made on #{user.contact_every.from_now}"
 
 This project uses MIT-LICENSE.
+
+## Compatibility
+
+The `master` branch targets Rails 5.1. The `rails-8` branch targets Rails 8.1 and is not intended to support Rails 5.1.
