@@ -33,4 +33,4 @@ This project uses MIT-LICENSE.
 
 ## Compatibility
 
-The `master` branch targets Rails 5.1. The `rails-8` branch targets Rails 8.1 and is not intended to support Rails 5.1.
+The `master` branch targets Rails 5.1. The `rails-8` branch supports Rails 5.1 through 8.1 and selects the coder argument form supported by Active Record.

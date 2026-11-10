@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     has_duration (0.0.7)
-      rails (~> 8.1.0)
+      rails (>= 5.1, < 8.2)
 
 GEM
   remote: http://rubygems.org/
